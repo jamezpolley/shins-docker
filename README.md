@@ -1,19 +1,14 @@
-# Widdershins Docker Container
+# Shins Docker Container
 
-[![Docker Repository on Quay](https://quay.io/repository/verygoodsecurity/widdershins-docker/status "Docker Repository on Quay")](https://quay.io/repository/verygoodsecurity/widdershins-docker)
-
-Convenience container for https://github.com/mermade/widdershins
+Convenience container for https://github.com/Mermade/shins
 
 ### Build it
 
-`docker build . -t widdershins`
+`docker build . -t shins`
 
 ### Use it
 
 ```
-docker run -v `pwd`:/app -t widdershins \
-  --search false \
-  --language_tabs 'ruby:Ruby' 'python:Python' \
-  --summary /app/petstore.yml \
-  -o /app/petstore.md
+docker run -v `pwd`:/app -t shins \
+  /app/petstore.md -o /app/api.html --inline \
 ```
