@@ -1,7 +1,7 @@
 FROM library/node:10-alpine
 
-LABEL maintainer="VGS <dev@verygoodsecurity.com>"
+LABEL maintainer="James Polley <jamezpolley@gmail.com>"
 
-RUN npm install -g widdershins
+RUN npm install -g shins
 
-ENTRYPOINT ["/usr/local/bin/widdershins"]
+ENTRYPOINT ["/usr/local/bin/shins"]
